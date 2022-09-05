@@ -1,14 +1,17 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+import { useMainStore } from "../store/main"
 
 defineProps({
   msg: String
 })
 
 const count = ref(0)
+const mainStore = useMainStore()
 </script>
 
 <template>
+   <div>{{mainStore.name}}</div>
   <h1>{{ msg }}</h1>
 
   <div class="card">
