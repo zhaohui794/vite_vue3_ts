@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "naive-ui": "^2.33.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.0-rc.10",
+    "vfonts": "^0.0.3",
     "vue": "^3.2.37",
     "vue-router": "4"
   },
@@ -49,5 +51,7 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "build:dev": "vite build --mode development",
+  "build:pro": "vite build --mode production"
 }

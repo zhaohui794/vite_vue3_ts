@@ -1,16 +1,13 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-const routes: RouteRecordRaw[] = [
-  {
-    path: '/',
-    name: 'Login',
-    component: () => import(''), // 注意这里要带上 文件后缀.vue
-  },
-]
-
+import { createRouter,createWebHistory } from "vue-router";
+import Index from "../pages/login/login.vue";
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+    history:createWebHistory(),
+    routes:[
+        {
+            path:'/',
+            component:Index,
+        }
+    ]
 })
-
-export default router
+export default router;
